@@ -1,2 +1,11 @@
-<h1>News#details</h1>
-<p>Find me in app/views/news/details.html.erb</p>
+<h1>News Article</h1>
+<h2><%= @article['title'] %></h2>
+<h3><%= @article['author'] %></h3>
+<h4><%= @article['publishedA'] %></h4>
+<h4><%= @article['urlToImage'] %></h4>
+<img src="<%= @article['urlToImage'] %>" alt="<%= @article['title'] %>">
+<p><%= @article['description'] %></p>
+<p>
+  <%= @article['content'] %><%= @article['content'] %><%= @article['content']
+  %><%= @article['content'] %><%= @article['content'] %>
+</p>

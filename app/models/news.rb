@@ -1,4 +1,3 @@
-# Modal which contains the API and its key
 class News
   include HTTParty
   # base url
@@ -9,7 +8,7 @@ class News
   end
 
   def self.search(keyword)
-    get("/everything?q=#{keyword}&from=2022-01-25&sortBy=publishedAt&language=en&apiKey=a80bfbeca7664ab5babf9860003a6989")
+    get("/everything?q=#{keyword}&sortBy=publishedAt&language=en&apiKey=a80bfbeca7664ab5babf9860003a6989")
   end
 
   def self.top_news
