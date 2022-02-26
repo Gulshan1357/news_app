@@ -1,0 +1,21 @@
+<h1><%= @heading %></h1>
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Author</th>
+    <th>Date</th>
+    <th>Image</th>
+    <th>Link</th>
+  </tr>
+  <% @news.each do |news| %>
+  <tr>
+    <td><%= news['title'] %></td>
+    <td><%= news['description'] %></td>
+    <td><%= news['author'] %></td>
+    <td><%= news['publishedAt'] %></td>
+    <td><img src="<%= news['urlToImage'] %>" alt="<%= news['title'] %>" /></td>
+    <td></td>
+  </tr>
+  <% end %>
+</table>
