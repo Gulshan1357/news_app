@@ -10,7 +10,7 @@ A News Application build using Ruby on Rails. This application fetches the data 
 ![news-app search](https://user-images.githubusercontent.com/23555665/155890022-e052d31e-5767-43c9-a166-a3c99ef8b439.gif)
 
 
-## Prerequisites![news-app homepage]
+## Prerequisites
 This application uses:
 * Ruby version: ruby 3.0.3p157
 * Rails version: Rails 7.0.2.2
