@@ -1,4 +1,5 @@
 # News App
+### Live at: https://fathomless-ocean-17429.herokuapp.com/
 
 A News Application build using Ruby on Rails. This application fetches the data from NewsAPI (https://newsapi.org/).
 
