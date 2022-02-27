@@ -4,11 +4,10 @@ A News Application build using Ruby on Rails. This application fetches the data 
 
 ## Main Features
 1. The home page shows a list of top headlines
-   ![Home Page](app/assets/gifs/news-app homepage.gif)
-2. Beside every news article there is dynamic link which take the user to a details page. As the name implies this page shows more infomation about that particular news article.
-   ![Home Page](app/assets/gifs/news-app details.gif)
-3. A search bar on top where user can retrieve news of their choice
-   ![Home Page](app/assets/gifs/news-app search.gif)
+![news-app homepage](https://user-images.githubusercontent.com/23555665/155889998-0ba009b6-36ee-45fc-9ac7-a8990b708b35.gif)
+2. Beside every news article there is dynamic link which take the user to a details page. As the name implies this page shows more infomation about that particular news article.3. ![news-app details](https://user-images.githubusercontent.com/23555665/155890013-d797d93d-2a5a-4a9f-9847-cc8e20f12729.gif)
+4. A search bar on top where user can retrieve news of their choice
+![news-app search](https://user-images.githubusercontent.com/23555665/155890022-e052d31e-5767-43c9-a166-a3c99ef8b439.gif)
 
 
 ## Prerequisites
