@@ -1,27 +1,31 @@
-<h1><%= @heading %></h1>
 <%= render partial: "shared/searchbar" %>
-<table border="1">
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Author</th>
-    <th>Date</th>
-    <th>Image</th>
-    <th>Link</th>
-  </tr>
-  <% @news.each_with_index do |article, index| %>
-  <tr>
-    <td><%= article['title'] %></td>
-    <td><%= article['description'] %></td>
-    <td><%= article['author'] %></td>
-    <td><%= article['publishedAt'] %></td>
-    <td><img src="<%= article['urlToImage'] %>" alt="<%= article['title'] %>" /></td>
-    <td>
-      <a
-        href="/news/details?search_term=<%= @search_value %>&article_num=<%= index %>"
-        >Link</a
-      >
-    </td>
-  </tr>
-  <% end %>
-</table>
+
+<h1 class="sticky-top bg-light"><%= @heading %></h1>
+
+<div class="container container-fluid wrap">
+  <table class="table table-striped table-sm">
+    <tr class="shadow head-row ">
+      <th>Title</th>
+      <th>Description</th>
+      <th>Author</th>
+      <th>Date</th>
+      <th>Image</th>
+      <th>Link</th>
+    </tr>
+    <% @news.each_with_index do |article, index| %>
+    <tr>
+      <td><%= article['title'] %></td>
+      <td><%= article['description'] %></td>
+      <td><%= article['author'] %></td>
+      <td><%= article['publishedAt'] %></td>
+      <td><img src="<%= article['urlToImage'] %>" alt="<%= article['title'] %>" class="img-thumbnail" /></td>
+      <td>
+        <a
+          href="/news/details?search_term=<%= @search_value %>&article_num=<%= index %>"
+          >Link</a
+        >
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
